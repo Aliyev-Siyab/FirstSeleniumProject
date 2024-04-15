@@ -40,4 +40,3 @@ public class ShoppingCartHelper extends BaseHelper {
         return nameAndSize;
     }
 }
-

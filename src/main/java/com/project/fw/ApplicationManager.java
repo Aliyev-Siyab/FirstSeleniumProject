@@ -7,18 +7,19 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.time.Duration;
 
-public class ApplicationManager{
+public class ApplicationManager {
     static WebDriver driver;
     String browser;
-
     UserHelper user;
+
+    RegistrationHelper newUser;
     ShoppingCartHelper cartHelper;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
     }
 
-    public  void init() {
+    public void init() {
         if (browser.equalsIgnoreCase("chrome")) {
             driver = new ChromeDriver();
         }
@@ -28,15 +29,15 @@ public class ApplicationManager{
         if (browser.equalsIgnoreCase("edge")) {
             driver = new EdgeDriver();
         }
-        driver = new ChromeDriver();
         driver.get("https://demowebshop.tricentis.com");
-        // Максимизируем окно браузера
+
         driver.manage().window().maximize();
-        // Ожидаем загрузки всех элементов на сайте перед началом теста
+
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
         user = new UserHelper(driver);
         cartHelper = new ShoppingCartHelper(driver);
+        newUser = new RegistrationHelper(driver);
     }
 
     public UserHelper getUser() {
@@ -47,8 +48,12 @@ public class ApplicationManager{
         return cartHelper;
     }
 
-    public  void stop() {
-        // Завершаем работу драйвера после выполнения теста
+    public RegistrationHelper getNewUser() {
+        return newUser;
+    }
+
+    public void stop() {
+
         driver.quit();
     }
 

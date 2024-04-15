@@ -1,5 +1,6 @@
 package com.ait.qa34;
 
+import com.project.UserData;
 import com.project.models.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -13,8 +14,8 @@ public class AddItemToShoppingCartTest extends TestBase {
             app.getUser().clickOnLogOutLink();
         }
         app.getUser().clickOnLoginLink();
-        app.getUser().fillLoginForm(new User().setEmail("1730siyabtest1@gmail.com")
-                .setPassword("Sa12345!"));
+        app.getUser().fillLoginForm(new User().setEmail(UserData.EMAIL)
+                .setPassword(UserData.PASSWORD));
         app.getUser().clickOnLoginButton();
     }
     @Test
@@ -34,4 +35,3 @@ public class AddItemToShoppingCartTest extends TestBase {
     }
 
 }
-

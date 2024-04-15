@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ait.qa34.AddItemToShoppingCartTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-15T18:54:47" hostname="DESKTOP-PRAVRSQ" time="1.916">
+  <properties/>
+  <testcase name="addItemToShoppingCartPositiveTest" classname="com.ait.qa34.AddItemToShoppingCartTest" time="1.916"/>
+  <system-out><![CDATA[20:54:46.438 [Test worker] INFO  com.ait.qa34.TestBase -- Start test addItemToShoppingCartPositiveTestwith data:[]
+Before adding: 14.1-inch Laptop (Quantity: 25)
+After adding: 14.1-inch Laptop (Quantity: 26)
+20:54:49.460 [Test worker] INFO  com.ait.qa34.TestBase -- PASSED addItemToShoppingCartPositiveTest
+20:54:49.460 [Test worker] INFO  com.ait.qa34.TestBase -- Stop test
+20:54:49.461 [Test worker] INFO  com.ait.qa34.TestBase -- =============================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

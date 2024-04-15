@@ -1,5 +1,6 @@
 package com.ait.qa34;
 
+import com.project.UserData;
 import com.project.models.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -14,11 +15,11 @@ public class LoginTests extends TestBase{
         }
     }
 
-    @Test (enabled = false)
+    @Test
     public void loginPositiveTest() {
         app.getUser().clickOnLoginLink();
-        app.getUser().fillLoginForm(new User().setEmail("1730siyabtest1@gmail.com")
-                .setPassword("Sa12345!"));
+        app.getUser().fillLoginForm(new User().setEmail(UserData.EMAIL)
+                .setPassword(UserData.PASSWORD));
         app.getUser().clickOnLoginButton();
         Assert.assertTrue(app.getUser().isLogOutLinkPresent());
     }
