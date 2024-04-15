@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ait.qa34.CreateAccountTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-15T21:24:52" hostname="DESKTOP-PRAVRSQ" time="2.055">
+  <properties/>
+  <testcase name="createNewAccountPositivTest" classname="com.ait.qa34.CreateAccountTest" time="2.055"/>
+  <system-out><![CDATA[23:24:37.430 [Test worker] INFO  com.ait.qa34.TestBase -- Start test createNewAccountPositivTestwith data:[]
+true
+23:24:54.987 [Test worker] INFO  com.ait.qa34.TestBase -- PASSED createNewAccountPositivTest
+23:24:54.994 [Test worker] INFO  com.ait.qa34.TestBase -- Stop test
+23:24:54.994 [Test worker] INFO  com.ait.qa34.TestBase -- =============================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ait.qa34.LoginTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-04-15T21:25:10" hostname="DESKTOP-PRAVRSQ" time="1.816">
+  <properties/>
+  <testcase name="loginNegativeTestWithOutEmail" classname="com.ait.qa34.LoginTests" time="0.761"/>
+  <testcase name="loginPositiveTest" classname="com.ait.qa34.LoginTests" time="1.041"/>
+  <system-out><![CDATA[23:24:54.996 [Test worker] INFO  com.ait.qa34.TestBase -- Start test loginNegativeTestWithOutEmailwith data:[]
+23:25:11.460 [Test worker] INFO  com.ait.qa34.TestBase -- PASSED loginNegativeTestWithOutEmail
+23:25:11.460 [Test worker] INFO  com.ait.qa34.TestBase -- Stop test
+23:25:11.460 [Test worker] INFO  com.ait.qa34.TestBase -- =============================================
+23:25:11.461 [Test worker] INFO  com.ait.qa34.TestBase -- Start test loginPositiveTestwith data:[]
+23:25:12.516 [Test worker] INFO  com.ait.qa34.TestBase -- PASSED loginPositiveTest
+23:25:12.517 [Test worker] INFO  com.ait.qa34.TestBase -- Stop test
+23:25:12.518 [Test worker] INFO  com.ait.qa34.TestBase -- =============================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

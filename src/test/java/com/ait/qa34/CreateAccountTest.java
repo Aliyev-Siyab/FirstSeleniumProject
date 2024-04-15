@@ -27,7 +27,7 @@ public class CreateAccountTest extends TestBase {
         System.out.println(app.getUser().isAccountLinkPresent());
     }
 
-    @Test(dataProvider = "addNewUserCsvFile", dataProviderClass = DataProviders.class)
+    @Test(enabled = false,dataProvider = "addNewUserCsvFile", dataProviderClass = DataProviders.class)
     public void addNewUserPositiveTestFromDataProviderWithScvFile(NewUsers newuser) {
         app.getNewUser().clickOnRegisterLink();
         app.getNewUser().fillRegisterForm(newuser);

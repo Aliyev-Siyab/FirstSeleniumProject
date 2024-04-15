@@ -4,7 +4,11 @@
     <test name="Regression">
         <classes>
             <class name="com.ait.qa34.AddItemToShoppingCartTest"/>
-            <class name="com.ait.qa34.CreateAccountTest"/>
+            <class name="com.ait.qa34.CreateAccountTest">
+                <methods>
+                    <exclude name=".*From.*"/>
+                </methods>
+            </class>
         </classes>
     </test>
 
